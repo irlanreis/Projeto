@@ -20,6 +20,9 @@ describe('Testes da função handlerElephants', () => {
     expect(handlerElephants('averageAge')).toEqual(10.5);
   });
   it('Verifica se ao receber um parâmetro inexistente a função retorna null', () => {
-    expect(handlerElephants('xablau')).toBe(null);
+    expect(handlerElephants('xabla')).toBe(null);
+  });
+  it('Verifica se ao receber um parâmetro location a função retorna NW', () => {
+    expect(handlerElephants('location')).toBe('NW');
   });
 });
